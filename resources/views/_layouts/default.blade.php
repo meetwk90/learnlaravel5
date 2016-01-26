@@ -16,7 +16,7 @@
     <div class="container" style="margin-top: 20px;">
         @yield('content')
         <div id="footer" style="text-align: center; border-top: dashed 3px #eeeeee; maigin: 50px 0; padding: 20px;">
-            ©2016 <a href="http://ohmyselina.net">WalterWan</a>
+            ©2016 <a href="http://ohmyselina.net">Walter Wan</a>
         </div>
     </div>
 
