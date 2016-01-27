@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Article;
 use App\Page;
 
 class HomeController extends Controller {
@@ -32,7 +33,7 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home')->withPages(Page::all());
+		return view('home')->withPages(Page::all())->withArticles(Article::all());
 	}
 
 }

@@ -1,14 +1,13 @@
-<?php namespace App\Http\Controllers\Admin;
+<?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use App\Page;
 use App\Article;
 
-class AdminHomeController extends Controller {
+class ArticlesController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -18,7 +17,6 @@ class AdminHomeController extends Controller {
 	public function index()
 	{
 		//
-		return view('AdminHome')->withPages(Page::all())->withArticles(Article::all());
 	}
 
 	/**
@@ -49,7 +47,7 @@ class AdminHomeController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		return view('articles.show')->withArticle(Article::find($id));
 	}
 
 	/**
